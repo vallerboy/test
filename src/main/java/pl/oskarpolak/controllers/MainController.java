@@ -24,7 +24,7 @@ public class MainController {
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String indexPost(@ModelAttribute("register") @Valid RegisterForm form,
+    public String indexPost(@ModelAttribute("registerForm") @Valid RegisterForm form,
                             BindingResult result){
         if(result.hasErrors()){
             System.out.println("Form ma błędy");
