@@ -12,10 +12,25 @@
     <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
 
     Surname: <input type="text" th:name="surname"  th:field="*{surname}" placeholder="surname" /> <p>
+
+    <p th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}"></p>
+
     Email: <input type="text" th:name="email"  th:field="*{email}" placeholder="email" /> <p>
+
+    <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+
     Nick: <input type="text" th:name="nick"  th:field="*{nick}" placeholder="login" /> <p>
+
+    <p th:if="${#fields.hasErrors('nick')}" th:errors="*{nick}"></p>
+
     Password: <input type="password" th:name="password"  th:field="*{password}"placeholder="password"> <p>
+
+    <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></p>
+
     Repeat password: <input type="password" th:name="repeatPassword"  th:field="*{repeatPassword}"placeholder="password"> <p>
+
+    <p th:if="${#fields.hasErrors('repeatPassword')}" th:errors="*{repeatPassword}"></p>
+
     <input type="submit" value="Wyślij">
 </form>
 
